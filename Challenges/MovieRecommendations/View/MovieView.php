@@ -3,7 +3,6 @@
 namespace SwitchTv\Challenges\MovieRecommendations\View;
 
 use SwitchTv\Challenges\MovieRecommendations\Model\Recommendation;
-
 use DateTime;
 
 final class MovieView extends RecommenderView {
