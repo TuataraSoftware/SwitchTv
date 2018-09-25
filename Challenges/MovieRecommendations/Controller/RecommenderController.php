@@ -15,7 +15,7 @@ abstract class RecommenderController {
 
 		$recommenderController->recommenderModel->fetchRecommendations();
 
-		return $recommenderController->recommenderView->render( $recommenderController->recommenderModel->getRecommendationsQueue() );
+		return $recommenderController->recommenderView->render( $recommenderController->recommenderModel->geSplPriorityQueue() );
 	}
 
 	protected function __construct( RecommenderModel $recommenderModel, RecommenderView $recommenderView ) {

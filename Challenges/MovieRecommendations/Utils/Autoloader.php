@@ -1,7 +1,7 @@
 <?php
 
 /**
- * This function loads class file by its namespace and name.
+ * Loads class file by its namespace and name.
  */
 spl_autoload_register( function( $classNameWithNamespace ) {
 

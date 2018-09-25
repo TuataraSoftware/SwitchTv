@@ -14,7 +14,7 @@ abstract class RecommenderModel {
 		$this->splPriorityQueue = new SplPriorityQueue();
 	}
 
-	public function getRecommendationsQueue() : SplPriorityQueue {
+	public function geSplPriorityQueue() : SplPriorityQueue {
 		return $this->splPriorityQueue;
 	}
 

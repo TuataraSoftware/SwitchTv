@@ -15,7 +15,7 @@ final class MovieParser {
 	}
 
 	/**
-	 * Generates movie Recommendation whenever stdClass satisfies RecommenderFilter's genre and time conditions.
+	 * Generates movie Recommendation whenever stdClass satisfies $recommenderFilter's genre and time conditions.
 	 *
 	 * @return Recommendation|null
 	 */
@@ -112,26 +112,26 @@ final class MovieParser {
 	 * NOTE:
 	 * - Values of genres & showings arrays are not validated. Some values might have invalid format
 	 * but we still can provide a recommendation. Another reason is performance as multiple array loops degrade it.
-	 * - Empty fields are considered invalid as such cases cannot result in a valid recommendation anyway
+	 * - Empty fields are considered invalid as such cases cannot result in a valid recommendation anyway.
 	 *
 	 * @return bool
 	 */
 	private function isValid() : bool {
 		$stdClass = $this->stdClass;
 
-		if( empty( $stdClass->name ) || ! is_string( $stdClass->name ) ) {
+		if( ! isset( $stdClass->name ) || ! is_string( $stdClass->name ) ) {
 			return false;
 		}
 
-		if( empty( $stdClass->rating ) || ! is_int( $stdClass->rating ) ) {
+		if( ! isset( $stdClass->rating ) || ! is_int( $stdClass->rating ) ) {
 			return false;
 		}
 
-		if( empty( $stdClass->genres ) || ! is_array( $stdClass->genres ) ) {
+		if( ! isset( $stdClass->genres ) || ! is_array( $stdClass->genres ) ) {
 			return false;
 		}
 
-		if( empty( $stdClass->showings ) || ! is_array( $stdClass->showings ) ) {
+		if( ! isset( $stdClass->showings ) || ! is_array( $stdClass->showings ) ) {
 			return false;
 		}
 

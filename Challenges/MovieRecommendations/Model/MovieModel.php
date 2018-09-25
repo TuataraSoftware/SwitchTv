@@ -9,7 +9,7 @@ final class MovieModel extends RecommenderModel {
 	const JSON_ENDPOINT_URL = 'https://pastebin.com/raw/cVyp3McN';
 
 	/**
-	 * Builds a priority queue of Recommendation objects based on external JSON service and filters it against RecommenderFilter.
+	 * Builds a priority queue of Recommendation objects based on external JSON service and filters it against $recommenderFilter.
 	 */
 	public function fetchRecommendations() : void {
 		$jsonArray = self::getJsonArray();
