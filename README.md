@@ -21,3 +21,10 @@ Deployment:
 ```bash
 git clone https://github.com/TuataraSoftware/SwitchTv
 ```
+
+Running Unit Tests:
+--------------------------------------
+
+```bash
+phpunit ~/SwitchTv/Challenges/MovieRecommendations/Tests
+```
