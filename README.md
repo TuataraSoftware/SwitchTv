@@ -1,5 +1,7 @@
 Switch Media PHP Interview Test
 ===================================
+Command line PHP application providing movie recommendations from external JSON endpoint based on time and genre input parameters.
+
 Author: Alexey Gerasimov
 
 Requirements
