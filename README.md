@@ -1,44 +1,23 @@
-**Airtasker Backend Challenge: Rate Limiter**
-
+Switch Media PHP Interview Test
+===================================
 Author: Alexey Gerasimov
 
----
+Requirements:
+--------------------------------------
 
-**Requirements:**
+- PHP 7.1
+- PHPUnit 7.3.5
 
-- Docker 17.*
+Usage:
+--------------------------------------
 
-**Usage:**
+```bash
+php ~/SwitchTv/Challenges/MovieRecommendations/Challenge.php 12:00 animation
+```
 
-- Include Airtasker/Challenges/Backend/HttpModules/RequestRateLimiterModule.php:
+Deployment:
+--------------------------------------
 
-`require_once ( $_SERVER[ 'DOCUMENT_ROOT' ] . '/Airtasker/Challenges/Backend/HttpModules/RequestRateLimiterModule.php' );`
-
-- Call RequestRateLimiterModule::run() method:
-
-`SwitchTv\Challenges\MovieRecommendations\RequestRateLimiterModule::run();`
-
-**Deployment:**
-
-- Download repository:
-
-`git clone https://github.com/TuataraSoftware/Airtasker`
-
-- Build & run Docker container:
- 
-`docker-compose -f Airtasker/Challenges/Backend/HttpModules/Docker/docker-compose.yml up --build`
-
-- For debug purposes: 
-
-`docker-compose -f Airtasker/Challenges/Backend/HttpModules/Docker/docker-compose-debug.yml up --build`
-
----
-
-Example:
-
-- Enter in browser:
-
-http://127.0.0.1/Airtasker/index.php
-
-- Refresh the page for 100 times until it shows error 429
-
+```bash
+git clone https://github.com/TuataraSoftware/SwitchTv
+```
