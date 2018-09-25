@@ -10,12 +10,10 @@ use DateTime;
 
 final class MovieView extends RecommenderView {
 
+	const RECOMMENDATION_FORMAT = '%s, showing at %s';
 	const EMPTY_QUEUE_MESSAGE = 'no movie recommendations';
 	const GLUE = "\n";
-
-
-	const RECOMMENDATION_FORMAT = '%s, showing at %s';
-
+	
 	const DATETIME_FORMAT_LONG = 'g:ia';
 	const DATETIME_FORMAT_SHORT = 'ga';
 	const DATETIME_FORMAT_MINUTES = 'i';
